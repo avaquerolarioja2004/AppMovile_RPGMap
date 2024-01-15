@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#732822" tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="900dp"
+        android:layout_height="0dp"
+        android:rotation="-270"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/untitled" />
+
+    <ImageView
+        android:id="@+id/imageView4_background4"
+        android:layout_width="383dp"
+        android:layout_height="498dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangulo_negro_vacio"
+        android:rotation="-180"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Volver"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tittle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boton_aniadir" />
+
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/vecna"
+        android:text="Eliminar"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/vecna"
+        android:text="¿ESTÁ SEGURO DE QUE QUIERE ELIMINAR  ESTE ELEMENTO  DE LOS CONTENIDOS DE LA APLICACIÓN? EL ELEMENTO SE BORRARÁ DE FORMA PERMANENTE Y NO SE PODRÁ RECUPERAR"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageButton
+        android:id="@+id/eliminar"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="36dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="eliminar"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/eliminar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cancelar"
+        tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

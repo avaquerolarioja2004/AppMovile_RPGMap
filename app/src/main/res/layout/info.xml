@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="900dp"
+        android:layout_height="0dp"
+        android:rotation="-90"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/untitled" />
+
+    <ImageView
+        android:id="@+id/imageView4_background2"
+        android:layout_width="288dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangulo_negro_vacio"
+        android:rotation="-180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <ImageView
+        android:id="@+id/imageView4_background3"
+        android:layout_width="383dp"
+        android:layout_height="498dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangulo_negro_vacio"
+        android:rotation="-180"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/ayuda"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/vecna"
+        android:text="AYUDA"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toEndOf="@+id/ayuda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="Volver"
+        app:srcCompat="@drawable/boton_aniadir" />
+
+    <LinearLayout
+        android:layout_width="267dp"
+        android:layout_height="418dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4_background2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background2"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background2"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_background2">
+
+        <TextView
+            android:id="@+id/pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/vecna"
+            android:text="BLA "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/pregunta1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/vecna"
+            android:text="&#x25C9; ¿CÓMO AÑADO ELEMENTOS?"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/vecna"
+            android:text="Para añadir elementos haga clic en el botón de mas
+situado al lado de opciones"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pregunta2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/vecna"
+            android:text="&#x25C9; ¿CÓMO ELIMINO ELEMENTOS?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/vecna"
+            android:text="Para eliminar un elemneto haga clic en sobre el y confirme la eliminación"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pregunta3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/vecna"
+            android:text="&#x25C9; ¿CÓMO CAMBIO DE CONTENIDO?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/vecna"
+            android:text="Haga clic en los botones que aparecen a su izquierda"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pregunta4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/vecna"
+            android:text="&#x25C9; ¿SE PUEDE CAMBIAR EL TAMAÑO?"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/texto4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/vecna"
+            android:text="No se puede cambiar el tamaño se debe eliminar el elemento y crear uno nuevo"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

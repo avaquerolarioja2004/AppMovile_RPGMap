@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="900dp"
+        android:layout_height="0dp"
+        android:rotation="-90"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/untitled" />
+
+    <ImageView
+        android:id="@+id/imageView4_background3"
+        android:layout_width="383dp"
+        android:layout_height="498dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangulo_negro_vacio"
+        android:rotation="-180"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/ayuda"
+        android:layout_width="186dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/vecna"
+        android:text="AÑADIR"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toEndOf="@+id/ayuda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="Volver"
+        app:srcCompat="@drawable/boton_aniadir" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_background3">
+
+        <ImageButton
+            android:id="@+id/p1x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <ImageButton
+            android:id="@+id/p1x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p1x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageButton
+            android:id="@+id/p2x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p2x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageButton
+            android:id="@+id/p3x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p3x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageButton
+            android:id="@+id/p4x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p4x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <ImageButton
+            android:id="@+id/p5x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p5x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <ImageButton
+            android:id="@+id/p6x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p6x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <ImageButton
+            android:id="@+id/p7x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p7x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <ImageButton
+            android:id="@+id/p8x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p8x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <ImageButton
+            android:id="@+id/p9x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p9x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="236dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <ImageButton
+            android:id="@+id/p10x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/p10x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="boton"
+            app:srcCompat="@drawable/boton_individual"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="crear"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4_background3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:srcCompat="@drawable/crear"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tamano"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/vecna"
+        android:text="TAMAÑO"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/crear"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background3"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/imageView4_background3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="0.457" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

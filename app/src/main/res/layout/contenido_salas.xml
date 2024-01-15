@@ -1,0 +1,186 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#732822" tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="900dp"
+        android:layout_height="0dp"
+        android:rotation="-270"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/untitled" />
+
+    <ImageView
+        android:id="@+id/imageView4_background"
+        android:layout_width="64dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangulo_negro_vacio"
+        android:rotation="-180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="264dp"
+        android:layout_height="425dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="vista"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:layout_constraintVertical_bias="0.469"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/linearSalas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="199dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="668dp"
+        android:fontFamily="@font/vecna"
+        android:text="SALAS"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="62dp"
+        android:layout_height="245dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_background">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/salas"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icono_salas"
+            android:contentDescription="Icons rooms"/>
+
+        <ImageButton
+            android:id="@+id/calavera"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Icons skull"
+            app:srcCompat="@drawable/boton_enemigos" />
+
+        <ImageButton
+            android:id="@+id/muebles"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Icons fornitures"
+            app:srcCompat="@drawable/boton_muebles" />
+
+        <ImageButton
+            android:id="@+id/objetos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Icons object"
+            app:srcCompat="@drawable/boton_obj" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Arrow back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4_background"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="376dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/vecna"
+        android:text="OPCIONES             "
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tittle"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="ADDButton"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:layout_constraintVertical_bias="0.347"
+        app:srcCompat="@drawable/boton_aniadir"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="InfoButton"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tittle"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="@+id/tittle"
+        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/info"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
