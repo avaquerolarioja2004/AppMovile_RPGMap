@@ -13,7 +13,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.rpgmap.MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
@@ -24,47 +24,50 @@
         </activity>
 
         <activity
-            android:name=".PreGenerateMap"
+            android:name="com.rpgmap.PreGenerateMap"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AniadirEnemigo"
+            android:name="com.rpgmap.AniadirEnemigo"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AniadirSala"
+            android:name="com.rpgmap.AniadirSala"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AniadirObjeto"
+            android:name="com.rpgmap.AniadirObjeto"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AniadirMueble"
-            android:theme="@style/AppTheme"
-            android:screenOrientation="portrait"/>
-
-        <activity
-            android:name=".ContenidoSalas"
+            android:name="com.rpgmap.AniadirMueble"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".ContenidoEnemigos"
+            android:name="com.rpgmap.ContenidoSalas"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".ContenidoObjetos"
+            android:name="com.rpgmap.ContenidoEnemigos"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".ContenidoMuebles"
+            android:name="com.rpgmap.ContenidoObjetos"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.rpgmap.ContenidoMuebles"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Info"
+            android:name="com.rpgmap.Info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rpgmap.GeneratedActivity"
             android:screenOrientation="portrait"/>
 
     </application>
