@@ -20,42 +20,25 @@ import java.util.List;
 
 public class AniadirMueble extends AppCompatActivity {
 
-    private static final int DELAY_MS = 200;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("hola");
-
         setContentView(R.layout.popup_fornitures);
-        List<Furniture_Table> enemyList = MainActivity.db.furnitureDAO().getAll();
-        for (Furniture_Table furniture : enemyList) {
-            String name = furniture.getName();
-            int idb =furniture.getId();
-            System.out.println("hola");
-            createCustomButton(name, idb);
-        }
 
-        ImageButton volver = findViewById(R.id.volver);
-        ImageButton aniadir = findViewById(R.id.aniadirMueble);
-        volver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirMueble.this, PreGenerateMap.class);
+        MainActivity.db.furnitureDAO().getAll().forEach(f -> createCustomButton(f.getName(), f.getId()));
 
-                startActivity(intent);
-            }
+        findViewById(R.id.volver).setOnClickListener(view -> {
+            setResult(PreGenerateMap.RESULT_UNCHANGED);
+            finish();
         });
-        aniadir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirMueble.this, PreGenerateMap.class);
-                HashMap<Integer, Integer> mapaEnemigos = obtieneCantidad(findViewById(R.id.linearMuebles));
-                intent.putExtra("muebles", mapaEnemigos);
-                startActivity(intent);
-            }
+
+        findViewById(R.id.aniadirMueble).setOnClickListener(view -> {
+            HashMap<Integer, Integer> mapaEnemigos = obtieneCantidad(findViewById(R.id.linearMuebles));
+            setResult(PreGenerateMap.RESULT_FURNITURE, new Intent().putExtra("muebles", mapaEnemigos));
+            finish();
         });
     }
 
-    private void createCustomButton(String buttonName, final int roomId) {
+    private void createCustomButton(String buttonName, int roomId) {
         LinearLayout parentLayout = new LinearLayout(this);
         parentLayout.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
@@ -98,36 +81,30 @@ public class AniadirMueble extends AppCompatActivity {
         decDoorButton.setLayoutParams(new LinearLayout.LayoutParams(
                 80, 80
         ));
-        incDoorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String currentText = textView.getText().toString();
-                String numero=currentText.substring(currentText.length() - 2).trim();
-                int newValue = Integer.parseInt(numero) + 1;
-                if(newValue>99){
-                    newValue=99;
-                }
-                textView.setText(currentText.substring(0, currentText.length() - numero.length()) + newValue);
+        incDoorButton.setOnClickListener(v -> {
+            String currentText = textView.getText().toString();
+            String numero=currentText.substring(currentText.length() - 2).trim();
+            int newValue = Integer.parseInt(numero) + 1;
+            if(newValue>99){
+                newValue=99;
             }
+            textView.setText(currentText.substring(0, currentText.length() - numero.length()) + newValue);
         });
         decDoorButton.setId(roomId);
         decDoorButton.setBackgroundResource(android.R.color.transparent);
         decDoorButton.setContentDescription("less");
         decDoorButton.setRotation(180);
         decDoorButton.setImageResource(R.drawable.arrow);
-        decDoorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String currentText = textView.getText().toString();
-                String numero=currentText.substring(currentText.length() - 2).trim();
-                int newValue = Integer.parseInt(numero) -1;
-                if(newValue<0){
-                    newValue=0;
-                }
-
-                textView.setText(currentText.substring(0, currentText.length() - numero.length()) + newValue);
-
+        decDoorButton.setOnClickListener(v -> {
+            String currentText = textView.getText().toString();
+            String numero=currentText.substring(currentText.length() - 2).trim();
+            int newValue = Integer.parseInt(numero) -1;
+            if(newValue<0){
+                newValue=0;
             }
+
+            textView.setText(currentText.substring(0, currentText.length() - numero.length()) + newValue);
+
         });
         rightButtonsLayout.addView(incDoorButton);
         rightButtonsLayout.addView(decDoorButton);
@@ -171,5 +148,4 @@ public class AniadirMueble extends AppCompatActivity {
 
         return mapaContenido;
     }
-
 }

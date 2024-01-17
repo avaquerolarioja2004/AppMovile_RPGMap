@@ -14,22 +14,6 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/untitled" />
 
-    <ImageButton
-        android:id="@+id/volver"
-        android:layout_width="47dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="4dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="Volver"
-        android:rotation="45"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tittle"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/boton_aniadir" />
-
     <ScrollView
         android:layout_width="318dp"
         android:layout_height="420dp"

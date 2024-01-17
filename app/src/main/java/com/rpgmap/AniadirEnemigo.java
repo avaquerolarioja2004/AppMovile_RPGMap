@@ -21,37 +21,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AniadirEnemigo extends AppCompatActivity {
-    private Handler incHandler = new  Handler();
-    private Handler decHandler = new Handler();
-    private static final int DELAY_MS = 200;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popup_enemy);
-        List<Enemy_Table> enemyList = MainActivity.db.enemyDAO().getAll();
-        for (Enemy_Table enemy : enemyList) {
-            String name = enemy.getNombre();
-            int idb =enemy.getId();
-            createCustomButton(name, idb);
-        }
 
-        ImageButton volver = findViewById(R.id.volver);
-        ImageButton aniadir = findViewById(R.id.aniadir);
-        volver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirEnemigo.this, PreGenerateMap.class);
+        MainActivity.db.enemyDAO().getAll().forEach(e -> createCustomButton(e.getNombre(), e.getId()));
 
-                startActivity(intent);
-            }
+        findViewById(R.id.volver).setOnClickListener(view -> {
+            setResult(PreGenerateMap.RESULT_UNCHANGED);
+            finish();
         });
-        aniadir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirEnemigo.this, PreGenerateMap.class);
-                ArrayList <Integer >enemigos = obtenerCheckBoxMarcados(findViewById(R.id.linear456));
-                intent.putExtra("enemigos", enemigos);
-                startActivity(intent);
-            }
+
+        findViewById(R.id.aniadir).setOnClickListener(view -> {
+            ArrayList <Integer> enemigos = obtenerCheckBoxMarcados(findViewById(R.id.linear456));
+            setResult(PreGenerateMap.RESULT_ENEMY, new Intent().putExtra("enemigos", enemigos));
+            finish();
         });
     }
 
@@ -73,8 +57,7 @@ public class AniadirEnemigo extends AppCompatActivity {
         textView.setGravity(Gravity.CENTER_VERTICAL);
         textView.setTextColor(getResources().getColor(R.color.black));
 
-        String buttonText = buttonName;
-        textView.setText(buttonText);
+        textView.setText(buttonName);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40);
 
         CheckBox doorCheckBox = new CheckBox(this);
@@ -107,13 +90,11 @@ public class AniadirEnemigo extends AppCompatActivity {
                     checkBoxMarcados.add(checkBox.getId());
                 }
             }
-
-            if (child instanceof ViewGroup) {
+            else if (child instanceof ViewGroup) {
                 checkBoxMarcados.addAll(obtenerCheckBoxMarcados((ViewGroup) child));
             }
         }
 
         return checkBoxMarcados;
     }
-
 }

@@ -32,24 +32,15 @@ public class AniadirObjeto extends AppCompatActivity {
             createCustomButton(name, idb);
         }
 
-        ImageButton volver = findViewById(R.id.volver);
-        ImageButton aniadir = findViewById(R.id.aniadirObjeto);
-        volver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirObjeto.this, PreGenerateMap.class);
-
-                startActivity(intent);
-            }
+        findViewById(R.id.volver).setOnClickListener(view -> {
+            setResult(PreGenerateMap.RESULT_UNCHANGED);
+            finish();
         });
-        aniadir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AniadirObjeto.this, PreGenerateMap.class);
-                HashMap<Integer, Integer> mapaObjetos = obtieneCantidad(findViewById(R.id.linearObjetos));
-                intent.putExtra("objetos", mapaObjetos);
-                startActivity(intent);
-            }
+
+        findViewById(R.id.aniadirObjeto).setOnClickListener(view -> {
+            HashMap<Integer, Integer> mapaObjetos = obtieneCantidad(findViewById(R.id.linearObjetos));
+            setResult(PreGenerateMap.RESULT_OBJECT, new Intent().putExtra("objetos", mapaObjetos));
+            finish();
         });
     }
 
