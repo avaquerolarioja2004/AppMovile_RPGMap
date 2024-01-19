@@ -1,6 +1,5 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#732822" tools:context="com.rpgmap.MainActivity">
     <ImageView android:id="@+id/fondo" android:layout_width="900dp" android:layout_height="0dp" android:rotation="-90" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.529" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0" app:srcCompat="@drawable/untitled"/>
-    <ImageView android:id="@+id/titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@drawable/tittle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.492" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageButton
         android:id="@+id/generar"
@@ -53,7 +52,19 @@
         app:layout_constraintTop_toTopOf="@+id/contenido"
         android:textColor="@color/black"/>
 
-
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="259dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/dragonhunter"
+        android:text="RPGMAP"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/generar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.389" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
